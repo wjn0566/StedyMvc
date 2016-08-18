@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//window.onload 事件在html文档完全被加载后触发执行。
+//所以再其中可以获取到HTML文档中的任何元素。
+window.onload = function(){
+	var btn = document.getElementsByTagName("button")[0];
+	btn.onclick = function(){
+	alert("aaaaa");
+	}
+	}
+</script>
+
+</head>
+<body>
+<button>ClickMe</button>
+
+</body>
+</html>
+<script type="text/javascript">
+alert("2");
+
+</script>
