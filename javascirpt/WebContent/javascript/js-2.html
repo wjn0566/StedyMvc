@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+<button>ClickMe</button>
+
+</body>
+</html>
+<!-- 在整个HTML文档加载后，获取其中的节点  
+	吧script节点放在html文档最后不符合写js的习惯-->
+<script type="text/javascript">
+//1.获取button
+var btn = document.getElementsByTagName("button");
+alert(btn.length);
+//2位button添加click事件
+btn[0].onclick = function(){
+	alert("helloWorld!");
+}
+</script>
